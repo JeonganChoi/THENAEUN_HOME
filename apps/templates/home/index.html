@@ -1,0 +1,435 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Dashboard {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} g-sidenav-show bg-gray-100 {% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <!-- -------- START HEADER 3 w/ image on background ------- -->
+        <header class="position-relative">
+            <div class="page-header min-vh-50" style="background-image: url('static/assets/img/bg37.jpg');">
+                <span class="mask bg-gradient-dark opacity-6"></span>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-9 text-center mx-auto">
+                            <h2 class="text-white mb-4">BISoft Corp.</h2>
+                            <p class="lead text-white">비아이소프트 (주)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="container position-relative mt-n3">
+                <div class="row">
+                    <div class="col-4 mt-n1 ms-auto">
+                        <div class="input-group shadow">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="col-2 text-left ps-0 mt-n1 me-auto">
+                        <button type="button" class="btn bg-gradient-warning w-100 mb-0 h-100">Search issue</button>
+                    </div>
+                </div>
+            </div>-->
+        </header>
+        <!-- -------- END HEADER 3 w/ image on background ------- -->
+        <!-- -------- START Features w/ title and 3 infos -------- -->
+        <section class="py-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto text-center pb-4">
+                        <h4 class="text-warning">Management Philosophy</h4>
+                    </div>
+                    <div class="col-lg-12 mx-auto text-center pb-4">
+                        <h4>비아이소프트는 &nbsp; "for the customer, providing the best information" &nbsp; "고객을 위하여 최상의 정보를 제공 하자"를 <br>
+                            회사의 성공 전략 으로 삼고 100% 자체기술을 기반으로 기업정보화 솔루션을 개발 하여 <br> 비즈니스를 전개 중인 제조 현장 정보화 운영 관리, 소프트 웨어 솔루션 개발 및 공급 전문 기업입니다. </h4>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="p-3 text-center">
+                            <a class="btn btn-lg  bg-gradient-warning  btn-round mb-0 me-1"><span class="h5 text-white">고객 만족</span></a>
+                            <!--<h3 class="mt-4">Check our team</h3>
+                            <p class="mb-0">We get insulted by others, lose trust for those others. We get back here to
+                                follow my dreams</p>-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="p-3 text-center">
+                            <a class="btn btn-lg  bg-gradient-secondary  btn-round mb-0 me-1"><span class="h5 text-white">종업원 만족</span></a>
+                            <!--<h5 class="mt-4">Support 24/7</h5>
+                            <p class="mb-0">We get insulted by others, lose trust for those others. We get back here to
+                                follow my dreams</p>-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mx-md-auto">
+                        <div class="p-3 text-center">
+                            <a class="btn btn-lg  bg-gradient-primary  btn-round mb-0 me-1"><span class="h5 text-white">사회 공헌</span></a>
+                            <!--<h5 class="mt-4">Unlimited revisions</h5>
+                            <p class="mb-0">We get insulted by others, lose trust for those others. We get back here to
+                                follow my dreams</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h4>우리는 "최고의 전문가"를 지향 하고 "고객 만족"을 위하여 최고의 정보를 제공 하는 제품을 개발 및 공급 하는 회사로 나아 간다.</h4>
+                        <p>We provide the products for the customer satisfy and be the best professionals in this area.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------- END Features w/ title and 3 infos -------- -->
+        <!--<section class="py-lg-5 mt-lg-5">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-6 mx-auto text-center">
+                        <h4>자주 묻는 질문</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="accordion" id="accordionRental">
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                        How do I order?
+                                        <i class="collapse-rotate fas fa-chevron-down text-xs text-primary pt-1 position-absolute end-0 me-3"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                     aria-labelledby="headingOne" data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        We’re not always in the position that we want to be at. We’re constantly
+                                        growing. We’re constantly making mistakes. We’re constantly trying to express
+                                        ourselves and actualize our dreams. If you have the opportunity to play this
+                                        game
+                                        of life you need to appreciate every moment. A lot of people don’t appreciate
+                                        the moment until it’s passed.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                        How can i make the payment?
+                                        <i class="collapse-rotate fas fa-chevron-down text-xs text-primary pt-1 position-absolute end-0 me-3"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        It really matters and then like it really doesn’t matter. What matters is the
+                                        people who are sparked by it. And the people who are like offended by it, it
+                                        doesn’t matter. Because it's about motivating the doers. Because I’m here to
+                                        follow my dreams and inspire other people to follow their dreams, too.
+                                        <br>
+                                        We’re not always in the position that we want to be at. We’re constantly
+                                        growing. We’re constantly making mistakes. We’re constantly trying to express
+                                        ourselves and actualize our dreams. If you have the opportunity to play this
+                                        game of life you need to appreciate every moment. A lot of people don’t
+                                        appreciate the moment until it’s passed.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                        How much time does it take to receive the order?
+                                        <i class="collapse-rotate fas fa-chevron-down text-xs text-primary pt-1 position-absolute end-0 me-3"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                     aria-labelledby="headingThree" data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        The time is now for it to be okay to be great. People in this world shun people
+                                        for being great. For being a bright color. For standing out. But the time is now
+                                        to be okay to be the greatest you. Would you believe in what you believe in, if
+                                        you were the only one who believed it?
+                                        If everything I did failed - which it doesn't, it actually succeeds - just the
+                                        fact that I'm willing to fail is an inspiration. People are so scared to lose
+                                        that they don't even try. Like, one thing people can't say is that I'm not
+                                        trying, and I'm not trying my hardest, and I'm not trying to do the best way I
+                                        know how.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                        Can I resell the products?
+                                        <i class="collapse-rotate fas fa-chevron-down text-xs text-primary pt-1 position-absolute end-0 me-3"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                     data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        I always felt like I could do anything. That’s the main thing people are
+                                        controlled by! Thoughts- their perception of themselves! They're slowed down by
+                                        their perception of themselves. If you're taught you can’t do anything, you
+                                        won’t do anything. I was taught I could do everything.
+                                        <br><br>
+                                        If everything I did failed - which it doesn't, it actually succeeds - just the
+                                        fact that I'm willing to fail is an inspiration. People are so scared to lose
+                                        that they don't even try. Like, one thing people can't say is that I'm not
+                                        trying, and I'm not trying my hardest, and I'm not trying to do the best way I
+                                        know how.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingFifth">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
+                                            aria-expanded="false" aria-controls="collapseFifth">
+                                        Where do I find the shipping details?
+                                        <i class="collapse-rotate fas fa-chevron-down text-xs text-primary pt-1 position-absolute end-0 me-3"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseFifth" class="accordion-collapse collapse"
+                                     aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        There’s nothing I really wanted to do in life that I wasn’t able to get good at.
+                                        That’s my skill. I’m not really specifically talented at anything except for the
+                                        ability to learn. That’s what I do. That’s what I’m here for. Don’t be afraid to
+                                        be wrong because you can’t learn anything from a compliment.
+                                        I always felt like I could do anything. That’s the main thing people are
+                                        controlled by! Thoughts- their perception of themselves! They're slowed down by
+                                        their perception of themselves. If you're taught you can’t do anything, you
+                                        won’t do anything. I was taught I could do everything.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <section class="py-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 ms-auto me-auto text-center">
+                        <div class="p-3 info-hover-warning">
+                            <!--<div class="icon icon-shape bg-gradient-warning icon-shape-circle text-primary">
+                                <i class="ni ni-chart-bar-32  opacity-10"></i>
+                            </div>-->
+                        </div>
+                        <h3 class="mb-0 mt-4">제조 정보화를 위한 솔루션</h3>
+                        <!--<h3>How To Handle Them</h3>-->
+                        <!--<p>We’re constantly trying to express ourselves and actualize our dreams. Don't stop.</p>-->
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 ms-auto my-auto">
+                        <div class="cursor-pointer">
+                            <div class="card card-background">
+                                <div class="full-background"
+                                     style="background-image: url('static/assets/img/bg26.jpg')"></div>
+                                <div class="card-body pt-7 pb-6 text-center">
+                                    <i class="ni ni-books mb-3 h3 text-white"></i>
+                                    <a href="javascript:;"
+                                       class="h4 d-block text-white up mb-0 text-decoration-underline-hover">주요 솔루션 및 서비스</a>
+                                    <p class="lead mt-2 opacity-9">Solutions & Services</p>
+                                    <button type="button" class="btn btn-white shadow-none mt-3">솔루션 예시 보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 me-auto my-auto ms-md-5">
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>1. 제조 실행/운영 관리 솔루션 전문업체</h5>
+                                <!--<p>
+                                    Gain access to the demographics, psychographics, and location of unique people who
+                                    are interested and talk about your brand.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>2. SCM/ PLM/ LOT 추적관리</h5>
+                                <!--<p>
+                                    Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich
+                                    insights from easy-to-use reports.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>3. TPS식 제조 성과 분석 관리 적용 모니터링</h5>
+                                <!--<p>
+                                    Track actions taken on your website that originated from social, and understand the
+                                    impact on your bottom line.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>4. RFID/ 바코드(1D/2D)/ QR바코드/ OPC서버 공급 및 운영</h5>
+                                <!--<p>
+                                    Track actions taken on your website that originated from social, and understand the
+                                    impact on your bottom line.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>5. 현장 설비 접점 공사/ 네트워크 설비 공사 제공</h5>
+                                <!--<p>
+                                    Track actions taken on your website that originated from social, and understand the
+                                    impact on your bottom line.
+                                </p>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="dark my-md-6 mt-2 mx-7">
+                <div class="row">
+                    <div class="col-md-5 ms-auto my-auto">
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>1. 고무성형</h5>
+                                <!--<p>
+                                    No matter where you are, Trello stays in sync across all of your devices.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>2. 프레스</h5>
+                                <!--<p>
+                                    Whether it’s for work or even the next family vacation, Trello helps your team.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>3. 정밀 가공</h5>
+                                <!--<p>
+                                    Integrate the apps your team already uses directly into your workflow.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>4. 금형 제작</h5>
+                                <!--<p>
+                                    Integrate the apps your team already uses directly into your workflow.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>5. 의류/패션</h5>
+                                <!--<p>
+                                    Integrate the apps your team already uses directly into your workflow.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>6. 기타</h5>
+                                <!--<p>
+                                    Integrate the apps your team already uses directly into your workflow.
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="p-3 info-horizontal d-flex">
+                            <div>
+                                <h5>7. PCI_OTC</h5>
+                                <!--<p>
+                                    Integrate the apps your team already uses directly into your workflow.
+                                </p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 me-auto my-auto ms-md-5">
+                        <div class="cursor-pointer">
+                            <div class="card card-background">
+                                <div class="full-background"
+                                     style="background-image: url('static/assets/img/bg24.jpg')"></div>
+                                <div class="card-body pt-7 pb-6 text-center">
+                                    <i class="ni ni-planet mb-3 h3 text-white"></i>
+                                    <a class="h4 text-decoration-underline-hover d-block text-white up mb-0">솔루션 제공 <br> 주요 사업 분야</a>
+                                    <p class="lead mt-2 opacity-9">Industry</p>
+                                    <button type="button" class="btn btn-white mt-3">솔루션 예시 보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-sm-7">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mx-auto text-center">
+                        <div class="ms-3 mb-md-5">
+                            <h3>We are here for you</h3>
+                            <p>
+                                질문이 있으면 남겨 주세요.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card card-plain">
+                            <form id="contact-form" method="post" autocomplete="off">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>이름</label>
+                                            <div class="input-group mb-4">
+                                                <input class="form-control" placeholder="이름"
+                                                       aria-label="Full Name" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 ps-md-2">
+                                            <label>이메일 주소</label>
+                                            <div class="input-group">
+                                                <input type="email" class="form-control"
+                                                       placeholder="이메일 주소">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4 mt-md-0 mt-4">
+                                        <label>무엇을 도와 드릴 까요?</label>
+                                        <textarea name="message" class="form-control border-radius-lg" id="message"
+                                                  rows="6"
+                                                  placeholder="내용을 적어 주세요."></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn bg-gradient-warning mt-4">보내기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+{% endblock %}
