@@ -3,7 +3,7 @@
         <div class="container">
             <a class="navbar-brand  text-white " rel="tooltip"
                title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-                The NAEUN
+                BI SOFT Corp.
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
@@ -276,7 +276,7 @@
                     <li class="nav-item dropdown dropdown-hover mx-2">
                         <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
                            role="button" id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="h5 text-white">제품</span>
+                            <span class="h5 text-white">서비스</span>
                             <img src="static/assets/img/down-arrow-white.svg" alt="down-arrow"
                                  class="arrow ms-1 d-lg-block d-none">
                             <img src="static/assets/img/down-arrow-dark.svg" alt="down-arrow"
@@ -284,34 +284,21 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-animation dropdown-lg border-radius-lg py-0 mt-0 mt-lg-3 pe-3"
                              aria-labelledby="dropdownMenuAccount">
-                            <!--<div class="row d-none d-lg-flex">
-                                <div class="col-6">
-                                    <div class="py-6 h-100 w-100 d-flex border-radius-lg border-radius-top-end-0 border-radius-bottom-end-0 position-relative dropdown-image"
-                                         style="background-image:url('static/assets/img/bg3.jpg')">
-                                        <div class="mask bg-gradient-primary border-radius-lg border-radius-top-end-0 border-radius-bottom-end-0"></div>
-                                        <div class="d-flex justify-content-center align-items-center text-center text-white font-weight-bold w-100 z-index-1 flex-column">
-                                            <div class="icon icon-shape text-center">
-                                                <i class="ni ni-atom text-white h4 opacity-10"
-                                                   aria-hidden="true"></i>
-                                            </div>
-                                            <span class="text-lg mt-2">Explore our<br>utilities pages</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 ps-0 d-flex justify-content-center flex-column">
-                                    <!--<ul class="list-group">
+                            <div class="row d-none d-lg-flex">
+                                <div class="col-12 ps-0 d-flex justify-content-center flex-column">
+                                    <ul class="list-group">
                                         <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
                                             <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1"
                                                id="dropdownSignIn">
-                                                <span>Sign In</span>
+                                                <span style="color: black">Sign In</span>
                                                 <img src="static/assets/img/down-arrow.svg" alt="down-arrow"
                                                      class="arrow">
                                             </a>
                                             <div class="dropdown-menu mt-0 py-3 px-2"
                                                  aria-labelledby="dropdownSignIn">
                                                 <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/sign-in/sign-in-cover.html">
-                                                    <span>Side Cover</span>
+                                                   href="{% url 'service' %}">
+                                                    <span>서비스 소개</span>
                                                 </a>
                                                 <a class="dropdown-item ps-3 border-radius-md mb-1"
                                                    href="../pages/sign-in/sign-in-illustration.html">
@@ -327,169 +314,15 @@
                                                 </a>
                                             </div>
                                         </li>
-                                        <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                                            <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1"
-                                               id="dropdownSignUp">
-                                                <span>Sign Up</span>
-                                                <img src="static/assets/img/down-arrow.svg" alt="down-arrow"
-                                                     class="arrow">
-                                            </a>
-                                            <div class="dropdown-menu mt-0 py-3 px-2"
-                                                 aria-labelledby="dropdownSignUp">
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/sign-up/sign-up-cover.html">
-                                                    <span>Side Cover</span>
-                                                </a>
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/sign-up/sign-up-illustration.html">
-                                                    <span>Illustration</span>
-                                                </a>
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/sign-up/sign-up-basic.html">
-                                                    <span>Basic</span>
-                                                </a>
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/sign-up/sign-up-simple.html">
-                                                    <span>Simple</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                                            <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1"
-                                               id="dropdownPasswordReset">
-                                                <span>Password Reset</span>
-                                                <img src="static/assets/img/down-arrow.svg" alt="down-arrow"
-                                                     class="arrow">
-                                            </a>
-                                            <div class="dropdown-menu mt-0 py-3 px-2"
-                                                 aria-labelledby="dropdownPasswordReset">
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/reset/reset-cover.html">
-                                                    <span>Side Cover</span>
-                                                </a>
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/reset/reset-illustration.html">
-                                                    <span>Illustration</span>
-                                                </a>
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/reset/reset-basic.html">
-                                                    <span>Basic</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                                            <a class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1"
-                                               id="dropdownError">
-                                                <span>Error Pages</span>
-                                                <img src="static/assets/img/down-arrow.svg" alt="down-arrow"
-                                                     class="arrow">
-                                            </a>
-                                            <div class="dropdown-menu mt-0 py-3 px-2"
-                                                 aria-labelledby="dropdownError">
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/error-404.html">
-                                                    <span>404</span>
-                                                </a>
-                                                <a class="dropdown-item ps-3 border-radius-md mb-1"
-                                                   href="../pages/error-500.html">
-                                                    <span>500</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item list-group-item border-0 p-0">
-                                            <a href="../pages/coming-soon.html"
-                                               class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1">
-                                                <span>Coming Soon</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item list-group-item border-0 p-0">
-                                            <a href="../pages/2fa-security.html"
-                                               class="dropdown-item border-radius-md ps-3 d-flex align-items-center justify-content-between mb-1">
-                                                <span>2FA Security</span>
-                                            </a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row d-lg-none">
-                                <div class="col-12 d-flex justify-content-center flex-column">
-                                    <h6 class="dropdown-header text-dark font-weight-bold d-flex justify-content-cente align-items-center px-0">
-                                        Sign In
-                                    </h6>
-                                    <a href="../pages/sign-in/sign-in-cover.html"
-                                       class="dropdown-item border-radius-md">
-                                        Side Cover
-                                    </a>
-                                    <a href="../pages/sign-in/sign-in-illustration.html"
-                                       class="dropdown-item border-radius-md">
-                                        Illustration
-                                    </a>
-                                    <a href="../pages/sign-in/sign-in-basic.html"
-                                       class="dropdown-item border-radius-md">
-                                        Basic
-                                    </a>
-                                    <a href="../pages/sign-in/sign-in-simple.html"
-                                       class="dropdown-item border-radius-md">
-                                        Simple
-                                    </a>
-                                    <h6 class="dropdown-header text-dark font-weight-bold d-flex justify-content-cente align-items-center mt-3 px-0">
-                                        Sign Up
-                                    </h6>
-                                    <a href="../pages/sign-up/sign-up-cover.html"
-                                       class="dropdown-item border-radius-md">
-                                        Side Cover
-                                    </a>
-                                    <a href="../pages/sign-up/sign-up-illustration.html"
-                                       class="dropdown-item border-radius-md">
-                                        Illustration
-                                    </a>
-                                    <a href="../pages/sign-up/sign-up-basic.html"
-                                       class="dropdown-item border-radius-md">
-                                        Basic
-                                    </a>
-                                    <a href="../pages/sign-up/sign-up-simple.html"
-                                       class="dropdown-item border-radius-md">
-                                        Simple
-                                    </a>
-                                    <h6 class="dropdown-header text-dark font-weight-bold d-flex justify-content-cente align-items-center mt-3 px-0">
-                                        Password Reset
-                                    </h6>
-                                    <a href="../pages/reset/reset-cover.html"
-                                       class="dropdown-item border-radius-md">
-                                        Side Cover
-                                    </a>
-                                    <a href="../pages/reset/reset-illustration.html"
-                                       class="dropdown-item border-radius-md">
-                                        Illustration
-                                    </a>
-                                    <a href="../pages/reset/reset-basic.html"
-                                       class="dropdown-item border-radius-md">
-                                        Basic
-                                    </a>
-                                    <h6 class="dropdown-header text-dark font-weight-bold d-flex justify-content-cente align-items-center mt-3 px-0">
-                                        Error Pages
-                                    </h6>
-                                    <a href="../pages/error-404.html" class="dropdown-item border-radius-md">
-                                        404
-                                    </a>
-                                    <a href="../pages/error-500.html" class="dropdown-item border-radius-md">
-                                        500
-                                    </a>
-                                    <hr class="horizontal dark">
-                                    <a href="../pages/coming-soon.html" class="dropdown-item border-radius-md">
-                                        Coming Soon
-                                    </a>
-                                    <a href="../pages/2fa-security.html" class="dropdown-item border-radius-md">
-                                        2FA Security
-                                    </a>
-                                </div>
-                            </div>-->
                         </div>
                     </li>
                     <li class="nav-item dropdown dropdown-hover mx-2">
                         <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
                            role="button" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="h5 text-white">서비스</span>
+                            <span class="h5 text-white">제품</span>
                             <img src="static/assets/img/down-arrow-white.svg" alt="down-arrow"
                                  class="arrow ms-1 d-lg-block d-none">
                             <img src="static/assets/img/down-arrow-dark.svg" alt="down-arrow"
