@@ -8,14 +8,34 @@
 {% block body_class %} g-sidenav-show bg-gray-100 {% endblock %}
 
 {% block content %}
+<style>
+  p {
+    margin: 2px 0; /* 위아래 여백을 2px로 설정하여 줄 간격을 좁힘 */
+  }
+</style>
+<style>
+  .card-body .d-flex {
+    padding: 0; /* 위아래 padding 줄이기 */
+    margin-bottom: 0; /* 줄 간격 최소화 */
+  }
+
+  .card-body span {
+    line-height: 0.2; /* 줄 간격 조절 */
+  }
+  .card-body i {
+    font-size: 12px; /* 아이콘 크기도 살짝 줄이기 */
+  }
+</style>
 
   <section class="py-7">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
-          <h3 class="mb-0 mt-2">Read More About Us</h3>
-          <h3>The most important</h3>
-          <p>Pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand.</p>
+        <div class="col-lg-9">
+          <!--<h3 class="mb-0 mt-2">서비스 소개</h3>-->
+          <h3>서비스 자세히 알아보기</h3>
+            <p>우리는 더 나은 소프트웨어를 만들기 위해 끊임없이 고민하고 연구합니다.</p>
+            <p>고객의 요구가 변화하고, 새로운 도전이 나타나면서 우리는 더 나은 솔루션을 제공하기 위해 끊임없이 고민하고 있습니다. </p>
+            <p>믿을 수 있는 파트너가 되기 위해, 우리는 성장하고 혁신을 이어갑니다."</p>
         </div>
       </div>
       <div class="row mt-5">
@@ -187,34 +207,41 @@
           <div class="col-lg-3 mb-lg-auto mb-4 my-auto p-md-0 ms-auto">
             <div class="card border-radius-top-end-lg-0 border-radius-bottom-end-lg-0">
               <div class="card-header text-center pt-4 pb-3">
-                <h6 class="text-dark opacity-8 text mb-0">기본사용료</h6>
+                <h6 class="text-dark opacity-8 text mb-0">AxB-RG Solution</h6>
+                <p>MES/POP Total 시스템</p>
                 <h2 class="font-weight-bolder">
-                  <small>￦</small>3,500,000
+                  <small class="me-2">￦</small>3,000,000
                 </h2>
               </div>
-              <div class="card-body mx-auto pt-0 height-200">
+              <div class="card-body mx-auto pt-0 mt-0">
                 <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
-                  </div>
                   <div class="ps-2">
                     <span class="text-sm" style="color: black">기준정보관리</span>
                   </div>
                 </div>
                 <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
-                  </div>
                   <div class="ps-2">
                     <span class="text-sm" style="color: black">재고관리</span>
                   </div>
                 </div>
                 <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
-                  </div>
                   <div class="ps-2">
                     <span class="text-sm" style="color: black">영업관리</span>
+                  </div>
+                </div>
+                <div class="justify-content-start d-flex px-2 py-1">
+                  <div class="ps-2">
+                    <span class="text-sm" style="color: black">생산/품질관리</span>
+                  </div>
+                </div>
+                <div class="justify-content-start d-flex px-2 py-1">
+                  <div class="ps-2">
+                    <span class="text-sm" style="color: black">금형/설비관리</span>
+                  </div>
+                </div>
+                <div class="justify-content-start d-flex px-2 py-1">
+                  <div class="ps-2">
+                    <span class="text-sm" style="color: black">모니터링</span>
                   </div>
                 </div>
               </div>
@@ -228,53 +255,40 @@
           <div class="col-lg-3 p-md-0 mb-lg-auto mb-4 z-index-2">
             <div class="card">
               <div class="card-header text-center pt-4 pb-3">
-                <h6 class="text-dark opacity-8 text mb-0 mt-2">업그레이드</h6>
+                <h6 class="text-dark opacity-8 text mb-0 mt-2">AxT-RG Solution</h6>
+                  <p>거래통합관리시스템</p>
                 <h2 class="font-weight-bolder">
-                  <small>￦</small>10,000,000 ~
+                  <small class="me-2">￦</small>2,000,000
                 </h2>
               </div>
-              <div class="card-body mx-auto pt-0 height-200">
+              <div class="card-body mx-auto pt-0 min-height-250">
                 <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
-                  </div>
                   <div class="ps-2">
-                    <span class="text-sm"></span>
+                    <span class="text-sm" style="color: black">수주관리</span>
                   </div>
                 </div>
                 <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
-                  </div>
                   <div class="ps-2">
-                    <span class="text-sm" style="color: black">생산/품질관리</span>
+                    <span class="text-sm" style="color: black">생산관리</span>
                   </div>
                 </div>
                 <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
-                  </div>
                   <div class="ps-2">
-                    <span class="text-sm" style="color: black">채권채무관리</span>
+                    <span class="text-sm" style="color: black">출하관리</span>
                   </div>
                 </div>
                 <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
+                  <div class="ps-2">
+                    <span class="text-sm" style="color: black">채권채무</span>
                   </div>
+                </div>
+                <div class="justify-content-start d-flex px-2 py-1">
                   <div class="ps-2">
                     <span class="text-sm" style="color: black">모니터링</span>
                   </div>
                 </div>
-                <div class="justify-content-start d-flex px-2 py-1">
-                  <div>
-                    <i class="fas fa-check text-info text-sm"></i>
-                  </div>
-                  <div class="ps-2">
-                    <span class="text-sm" style="color: black">기타</span>
-                  </div>
-                </div>
               </div>
+              <h6 class="text-dark opacity-8 text mb-0 mt-2"></h6>
               <div class="card-footer pt-0">
                 <a href="javascript:;" class="btn btn-icon bg-gradient-info d-block mb-0">
                   지금 구매하기
@@ -286,9 +300,9 @@
           <div class="col-lg-3 mb-lg-auto mb-4 my-auto p-md-0 me-auto">
             <div class="card border-radius-top-start-lg-0 border-radius-bottom-start-lg-0">
               <div class="card-header text-center pt-4 pb-2">
-                <h6 class="text-dark opacity-8 text mb-0">커스터마이징</h6>
+                <h6 class="text-dark opacity-8 text mb-0">고객 개발형</h6>
                 <h2 class="font-weight-bolder">
-                  <small>￦</small>30,000,000 ~
+                  <small class="me-2">￦</small>80,000,000 ~
                 </h2>
               </div>
               <div class="card-body mx-auto pt-0 height-200">
@@ -314,8 +328,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto text-center mb-5">
-          <h2>Best no-tricks pricing</h2>
-          <p class="lead">If you're not satisfied, contact us within the first 30 days and we'll send you a full refund.</p>
+          <h2>구독형 비용</h2>
+          <p class="lead">초기비용 들지않고 월간 구독 요금만 부담하세요.</p>
         </div>
       </div>
       <div class="row">
@@ -369,7 +383,7 @@
               <div class="card-body text-center">
                 <h6 class="mt-sm-4 mt-0 mb-0">Pay once, own it forever</h6>
                 <h1 class="mt-0">
-                  <small>$</small>399
+                  <small class="me-2">￦</small>450,000
                 </h1>
                 <button type="button" class="btn bg-gradient-info btn-lg mt-2">Get Access</button>
                 <p class="text-sm">Get a free sample (20MB)</p>
@@ -380,7 +394,7 @@
       </div>
     </div>
   </section>
-  <section class="py-7 position-relative">
+  <section hidden class="py-7 position-relative">
     <div id="carousel-testimonials" class="carousel slide carousel-team">
       <div class="carousel-inner">
         <div class="carousel-item active">
