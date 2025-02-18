@@ -6,19 +6,32 @@
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block body_class %} g-sidenav-show bg-gray-100 {% endblock %}
-
+<!--bg37.jpg-->
 {% block content %}
-
-    <div class="container-fluid">
+    <style>
+    .custom-title {
+        font-size: 5rem;  /* 원하는 크기 */
+        font-weight: 900; /* 900 = Extra Bold */
+        color: white;
+    }
+    </style>
+    <div class="container-fluid bg-white">
         <!-- -------- START HEADER 3 w/ image on background ------- -->
         <header class="position-relative">
-            <div class="page-header min-vh-50" style="background-image: url('static/assets/img/bg37.jpg');">
-                <span class="mask bg-gradient-dark opacity-6"></span>
+            <div class="page-header min-vh-100 position-relative overflow-hidden bg-white">
+                <!-- 비디오 배경 -->
+                <video autoplay loop muted playsinline class="position-absolute w-100 h-100 top-0 start-0 object-fit-cover">
+                    <source src="static/assets/img/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- 어두운 오버레이 -->
+                <div class="mask bg-gradient-dark opacity-6 position-absolute w-100 h-100"></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-sm-9 text-center mx-auto">
-                            <h2 class="text-white mb-4">BISoft Corp.</h2>
-                            <p class="lead text-white">비아이소프트 (주)</p>
+                            <h1 class="custom-title">BISoft Corp.</h1>
+                            <h4 class="text-white">비아이소프트 (주)</h4>
                         </div>
                     </div>
                 </div>
